@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>አጠቃላይ አርቺቭ - Islamic Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-banner">
+    <div class="pattern-overlay"></div>
+    <h1>አጠቃላይ አርቺቭ</h1>
+    <p>የእውቀት ማከማቻ</p>
+  </div>
+
+  <div class="container">
+    <div id="searchContainer">
+      <input type="text" id="searchBar" placeholder="እዚህ ይፈልጉ...">
+      <button id="searchButton" onclick="searchArticles()">ፈልግ</button>
+    </div>
+
+    <div class="archive-grid">
+      <main class="content-area">
+        
+        <details class="main-card" open>
+          <summary class="main-summary">1. ሳምንታዊ ፕሮግራም</summary>
+          
+          <div class="card-content">
+             <div class="media-box">
+                <p class="media-label">የቪዲዮ ማጠቃለያ</p>
+               <video controls>
+                 <source src="videos/vid1.mp4" type="video/mp4">
+               </video>
+             </div>
+
+            <details>
+              <summary>1.1. ሳምንታዊ ዜና</summary>
+              <div class="media-box">[add fail audio 1]</div>
+            </details>
+            <audio controls>
+              <source src="audios/audio1.mp3" type="audio/mpeg">
+              
+            </audio>
+
+            <details>
+              <summary>1.5. መነባነብ</summary>
+              <details>
+                <summary>1.5.1. ርዕሰ-አንቀፅ</summary>
+                <div class="image-placeholder"> </div>
+                <img src="images/photo1.jpeg" alt="መግለጫ">
+                <ul class="section-list">
+                  <li><span class="num">40</span> የጠዋጊት ዑለሞች ኢጅማዕ <span class="tag">#አን-ነበእ 262</span></li>
+                  <li><span class="num">55</span> ንቁ! የአላህ እርዳታ ቅርብ ነው <span class="tag">#አን-ነበእ - 276</span></li>
+                  <li><span class="num">65</span> ወደ አቅሷ የሚወስደው ታላቁ መንገድ <span class="tag">#አን-ነበእ - 287</span></li>
+                  </ul>
+              </details>
+            </details>
+          </div>
+        </details>
+
+        <details class="main-card">
+          <summary class="main-summary">2. ከመፅሐፍ ዓለም</summary>
+          <div class="card-content">
+            <div class="image-placeholder"> </div>
+           <img src="images/photo2.jpeg" alt="መግለጫ">
+            <details><summary>2.1. ፅናት በጂሃድ ጎዳና</summary></details>
+          </div>
+        </details>
+
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-box">
+          <h3>ልዩ መልዕክቶች</h3>
+          <div class="image-placeholder small"> </div>
+          <img src="images/photo3.jpeg" alt="መግለጫ">
+          <p>ለበለጠ መረጃ ዋናውን ማውጫ ይመልከቱ።</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
